@@ -21,6 +21,9 @@ style_img_size = (256, 256)  # Recommended to keep it at 256.
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'model')
 # set cache dir to store hub module
 os.environ['TFHUB_CACHE_DIR'] = MODEL_PATH
+# turn off file_uploader warning
+# TODO: wrap the file_uploader buffer with a IOWrapper
+st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # Upload images
 st.sidebar.title("Upload your images")
