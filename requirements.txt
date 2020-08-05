@@ -1,0 +1,5 @@
+numpy
+tensorflow-cpu
+tensorflow_hub
+streamlit
+PIL
